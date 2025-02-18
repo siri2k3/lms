@@ -117,3 +117,19 @@
     color: var(--button-hover-text-color);
   }
   
+  /* Styling the Theme Switcher */
+  fieldset {
+    border: 2px solid var(--navbar-bg-color);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    padding: 0 10px;
+  }
+  

@@ -30,14 +30,18 @@ const Navbar = ({ user, setUser }) => {
         ) : (
           <Link to="/login">Login</Link>
         )}
-        {/* Theme Switcher */}
-        <select value={theme} onChange={handleThemeChange}>
-          <option value="white">White</option>
-          <option value="black">Black</option>
-          <option value="blue">Blue</option>
-          <option value="pink">Pink</option>
-          <option value="red">Red</option>
-        </select>
+        
+        {/* Theme Switcher with Legend */}
+        <fieldset>
+          <legend>Choose Theme</legend>
+          <select value={theme} onChange={handleThemeChange}>
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="pink">Pink</option>
+            <option value="red">Red</option>
+          </select>
+        </fieldset>
       </div>
     </nav>
   );
